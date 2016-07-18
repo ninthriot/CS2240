@@ -1,0 +1,24 @@
+Assignment 7, CS 2240, Spring 2016
+Web Server 
+Due at Final Exam -- 5pm Tuesday. 
+
+For this last assignment you will build some minimal web server. The general specifications are:
+
+1) The server can handle multiple clients using threads
+
+2) The server can manage GET Http requests and serve image and audio files. 
+
+3) A 'thread pool' that allows threads to handle multiple requests will be used. 
+
+Obviously 1) and 2) should be done before 3.
+
+The Unix system calls you build with are those that allow a 'socket' to be created for something you might think of as a networked pipe. On top of this flow of data you must implement the simplest HTTP protocol so that GET requests can be managed. 
+
+There are utilities that we can use to profile your server. I haven't recalled what we have used previously but I will get that identified so that you can 'profile' your server's performance. Colin tells me that a program called Siege can be used to test the DDOS defenses. 
+
+You have been given simple socket examples as well as a skeleton for the thread pool. Server2.c apparently has a bug. 
+
+rgt
+4/19/16
+
+
