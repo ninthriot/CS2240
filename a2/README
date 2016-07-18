@@ -1,1 +1,13 @@
+Assignment 2 -- Directory Traversal
+Push your work to the a2 repo for cs2240 by Tuesday, February 9.
 
+You are to write a program called as 
+	$./a.out <dir>
+where the supplied parameter is a directory name. 
+That name may be an absolute or relative path and need not reside in the same directory as a.out
+The program should print the file names in that directory and all directories below. This should be done in a recursive (depth first) fashion, indenting as the directory depth increases. 
+If permissions for file names or directories are denied recover gracefully. 
+In addition, if any 'core' files are discovered, remove them if possible. 
+System calls that may be appropriate include the 'stat' functions, chdir(), getcwd(), and the macros that identify the file type, given the mode of a file. 
+Format your output legibly so that the reader can know what the traversal has done. Recover gracefully from errors. 
+Be sure you not follow links or directories '.' and '..'
